@@ -1,0 +1,250 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    align-items: stretch;
+    min-height: 100vh;
+}
+
+.sidebar {
+    font-family: 'Clear Sans', sans-serif;
+    background: #003366;
+    color: white;
+    flex: 1;
+    padding: 100px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar .profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .profile h1 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.sidebar .profile p {
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+.sidebar h2 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.main {
+    flex: 2;
+    padding: 40px;
+}
+.main section p {
+    font-size: 1rem;
+    line-height: 1.8;  /* Adjusted line height for better spacing */
+    margin-bottom: 20px;  /* Optional: space below the paragraph */
+}
+
+.main h2 {
+    font-size: 1.5rem;
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.main section {
+    margin-bottom: 30px;
+}
+
+.main ul {
+    list-style: disc;  /* Standard bullets */
+    padding-left: 20px;  /* Indentation for list items */
+}
+
+.main ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.main ul li strong {
+    color: #003366;  /* Blue color for company names */
+}
+
+/* Fix for nested list items inside the main section */
+.main .experience ul ul {
+    list-style-type: circle;  /* Lighter, circular bullet for nested items */
+    margin-left: 20px;  /* Indentation for nested lists */
+    font-size: 0.9rem;  /* Smaller font size for nested tasks */
+    color: #666;  /* Light gray color for nested list items */
+}
+
+/* Remove bullets from the company names */
+.main .experience > ul > li {
+    list-style: none;  /* Remove bullet points from top-level list items (companies) */
+    margin-bottom: 15px;  /* Add some space between the companies */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.highlight {
+    background: #0056b3;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.experience ul {
+    padding-left: 20px;
+}
+
+.experience ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul ul {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 0.85rem;
+    color: #ccc;
+    list-style-type: disc;
+}
+
+.sidebar ul ul li {
+    list-style-type: circle;
+    margin-bottom: 5px;
+    color: #999;
+}
+
+.sidebar ul ul {
+    list-style-image: url('your-custom-bullet.png');
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        padding: 20px;
+    }
+
+    .main {
+        padding: 20px;
+    }
+}
+
+.sidebar ul li strong {
+    font-size: 1rem;
+}
+
+.sidebar ul li .course {
+    font-size: 0.85rem;
+}
+.main .experience > ul > li {
+    list-style: none; 
+    margin-bottom: 15px;
+}
+
+.main .experience > ul > li > ul {
+    margin-top: 10px; 
+}
+
+
+.company-name {
+    color: #003366;  
+    font-size: 1.1rem;
+}
+
+.job-role {
+    color: black; 
+    font-weight: bold; 
+}
+
+/* Custom styling for the "Umiejętności | Wykształcenie" section */
+.skills {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.skills li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.skills li em {
+    font-style: italic;
+}
+
+.skills li strong {
+    font-weight: bold;
+}
+
+.skills li em,
+.skills li strong {
+    color: #003366;
+}
+
+.github-link {
+    color: #00aaff;
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.github-link:hover {
+    text-decoration: underline; 
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.profile-picture img {
+    width: 250px;
+    height: 250px;
+    
+    object-fit: cover; 
+    
+}
