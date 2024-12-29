@@ -68,8 +68,8 @@ body {
 }
 .main section p {
     font-size: 1rem;
-    line-height: 1.8;  /* Adjusted line height for better spacing */
-    margin-bottom: 20px;  /* Optional: space below the paragraph */
+    line-height: 1.8;
+    margin-bottom: 20px;
 }
 
 .main h2 {
@@ -85,8 +85,8 @@ body {
 }
 
 .main ul {
-    list-style: disc;  /* Standard bullets */
-    padding-left: 20px;  /* Indentation for list items */
+    list-style: disc;
+    padding-left: 20px;
 }
 
 .main ul li {
@@ -96,21 +96,19 @@ body {
 }
 
 .main ul li strong {
-    color: #003366;  /* Blue color for company names */
+    color: #003366;
 }
 
-/* Fix for nested list items inside the main section */
 .main .experience ul ul {
-    list-style-type: circle;  /* Lighter, circular bullet for nested items */
-    margin-left: 20px;  /* Indentation for nested lists */
-    font-size: 0.9rem;  /* Smaller font size for nested tasks */
-    color: #666;  /* Light gray color for nested list items */
+    list-style-type: circle;
+    margin-left: 20px;
+    font-size: 0.9rem;
+    color: #666;
 }
 
-/* Remove bullets from the company names */
 .main .experience > ul > li {
-    list-style: none;  /* Remove bullet points from top-level list items (companies) */
-    margin-bottom: 15px;  /* Add some space between the companies */
+    list-style: none;
+    margin-bottom: 15px;
 }
 
 .contact {
@@ -201,7 +199,6 @@ body {
     font-weight: bold; 
 }
 
-/* Custom styling for the "Umiejętności | Wykształcenie" section */
 .skills {
     list-style: disc;
     padding-left: 20px;
