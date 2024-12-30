@@ -66,7 +66,6 @@ body {
     flex: 2;
     padding: 40px;
 }
-
 .main section p {
     font-size: 1rem;
     line-height: 1.8;
@@ -161,17 +160,14 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        flex-wrap: wrap;
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .sidebar {
-        flex: 1 1 30%;
         padding: 20px;
     }
 
     .main {
-        flex: 1 1 70%;
         padding: 20px;
     }
 }
@@ -183,7 +179,6 @@ body {
 .sidebar ul li .course {
     font-size: 0.85rem;
 }
-
 .main .experience > ul > li {
     list-style: none; 
     margin-bottom: 15px;
@@ -192,6 +187,7 @@ body {
 .main .experience > ul > li > ul {
     margin-top: 10px; 
 }
+
 
 .company-name {
     color: #003366;  
@@ -245,9 +241,10 @@ body {
 .profile-picture img {
     width: 250px;
     height: 250px;
+    
     object-fit: cover; 
+    
 }
-
 .projekty h2 {
     color: #003366;
     border-bottom: 2px solid #003366;
@@ -265,7 +262,6 @@ body {
     line-height: 1.5;
     margin-bottom: 10px;
 }
-
 .projekty li em {
     font-style: italic;
 }
