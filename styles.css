@@ -66,6 +66,7 @@ body {
     flex: 2;
     padding: 40px;
 }
+
 .main section p {
     font-size: 1rem;
     line-height: 1.8;
@@ -160,14 +161,17 @@ body {
 
 @media (max-width: 768px) {
     .container {
-        flex-direction: column;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .sidebar {
+        flex: 1 1 30%;
         padding: 20px;
     }
 
     .main {
+        flex: 1 1 70%;
         padding: 20px;
     }
 }
@@ -179,6 +183,7 @@ body {
 .sidebar ul li .course {
     font-size: 0.85rem;
 }
+
 .main .experience > ul > li {
     list-style: none; 
     margin-bottom: 15px;
@@ -187,7 +192,6 @@ body {
 .main .experience > ul > li > ul {
     margin-top: 10px; 
 }
-
 
 .company-name {
     color: #003366;  
@@ -241,36 +245,36 @@ body {
 .profile-picture img {
     width: 250px;
     height: 250px;
-    
     object-fit: cover; 
-    
 }
-.projekty-section h2 {
+
+.projekty h2 {
     color: #003366;
     border-bottom: 2px solid #003366;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
 
-.projekty-section ul {
+.projekty ul {
     list-style: disc;
     padding-left: 20px;
 }
 
-.projekty-section ul li {
+.projekty ul li {
     font-size: 1rem;
     line-height: 1.5;
     margin-bottom: 10px;
 }
-.projekty-section li em {
+
+.projekty li em {
     font-style: italic;
 }
 
-.projekty-section strong {
+.projekty strong {
     font-weight: bold;
 }
 
-.projekty-section em,
-.projekty-section strong {
+.projekty em,
+.projekty strong {
     color: #003366;
 }
