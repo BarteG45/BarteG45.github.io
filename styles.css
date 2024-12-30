@@ -245,3 +245,32 @@ body {
     object-fit: cover; 
     
 }
+.projekty-section h2 {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.projekty-section ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.projekty-section ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.projekty-section li em {
+    font-style: italic;
+}
+
+.projekty-section strong {
+    font-weight: bold;
+}
+
+.projekty-section em,
+.projekty-section strong {
+    color: #003366;
+}
