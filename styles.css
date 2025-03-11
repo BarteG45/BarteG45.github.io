@@ -18,6 +18,10 @@ body {
     min-height: 100vh;
 }
 
+.profile-picture {
+    display: none;
+}
+
 .sidebar {
     font-family: 'Clear Sans', sans-serif;
     background: #003366;
